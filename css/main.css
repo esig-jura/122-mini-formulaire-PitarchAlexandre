@@ -70,7 +70,9 @@ form label {
     cursor: pointer;
 }
 
-input {
+form input,
+form select {
+    width: 100%;
     padding: 1em;
     border: 2px solid #2c3e50;
     background-color: #ecf0f1;
