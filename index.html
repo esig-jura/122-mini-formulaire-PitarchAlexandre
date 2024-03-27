@@ -18,6 +18,21 @@
 
 <h1>Mini Form</h1>
 <!-- VOTRE FORMULAIRE -->
+<!--method="get"-> recoit l'information / method="post" envoie l'information. // Est-ce que la personne
+    veut evoyer ou recevoir de l'information??-->
+
+<form action="https://kode.ch/getpost/" method="post">
+    <label for="email">E-mail</label>
+    <input id="email" type="email" name="email">
+
+    <label for="mdp" >Mot de passe</label>
+    <input id="mdp" type="password" name="mdp">
+
+    <label for="mdpConfirm" >Confirmer mot de passe</label>
+    <input id="mdpConfirm" type="password" name="mdpConfirm">
+
+    <button>Créer un compte</button>
+</form>
 <script src="js/main.js"></script>
 </body>
 </html>
