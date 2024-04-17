@@ -13,6 +13,10 @@ console.log(formulaire, txtMDP, txtMDPCConfirm );
 
 //Ecouter l'envoi du formulaire
 formulaire.addEventListener('submit', (e) => {
-    alert('Coucoucoucoucoucoucoucou');
+    // Récupérer la valeur du mot de passe
+    let mdp = txtMDP.value;
+    let mdpConfirm  = txtMDPCConfirm.value;
+
+    alert(mdp + ':' + mdpConfirm);
 })
 
