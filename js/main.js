@@ -17,6 +17,11 @@ formulaire.addEventListener('submit', (e) => {
     let mdp = txtMDP.value;
     let mdpConfirm  = txtMDPCConfirm.value;
 
-    alert(mdp + ' : ' + mdpConfirm);
+    // Tester si les mdp sont identiques
+    if(mdpConfirm !== mdp) {
+        alert('Les mots de passes sont différents !!!')
+    }
+
+    alert('Compte créé avec succès !');
 })
 
