@@ -17,6 +17,6 @@ formulaire.addEventListener('submit', (e) => {
     let mdp = txtMDP.value;
     let mdpConfirm  = txtMDPCConfirm.value;
 
-    alert(mdp + ':' + mdpConfirm);
+    alert(mdp + ' : ' + mdpConfirm);
 })
 
