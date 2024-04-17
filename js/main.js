@@ -33,6 +33,7 @@ formulaire.addEventListener('submit', (event) =>  {
     // S'il y a des erreurs
     if (erreurs.length > 0) {
         let msg = '';
+        // Pour chaque erreur dans le tableau
         for (let err of erreurs) {
             msg += ' \n - ' + err;
         }
