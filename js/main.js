@@ -9,7 +9,10 @@
 const formulaire = document.querySelector('form');
 const txtMDP = document.querySelector('#mdp');
 const txtMDPCConfirm  = document.getElementById('mdpConfirm');
-console.log(formulaire, txtMDP, txtMDPCConfirm );
+const listBackground = document.querySelector('#background');
+const body = document.querySelector('body');
+
+console.log(formulaire, txtMDP, txtMDPCConfirm, listBackground, body );
 
 //Ecouter l'envoi du formulaire
 formulaire.addEventListener('submit', (event) =>  {
@@ -47,4 +50,11 @@ formulaire.addEventListener('submit', (event) =>  {
     // Permet d'envoyer le formulaire
     formulaire.submit();
 
+});
+
+
+// Ecouter le changement de valeur dans la liste déroulante
+listBackground.addEventListener('change', () =>  {
+    // Remplace img de fond du body
+    body.style.backgroundImage = 'url(./img/backgrounds/' + listBackground.value + ')';
 });
