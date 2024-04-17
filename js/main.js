@@ -7,7 +7,9 @@
 
 //Récupération du formulaire
 const formulaire = document.querySelector('form');
-console.log(formulaire);
+const txtMDP = document.querySelector('#mdp');
+const txtMDPCConfirm  = document.getElementById('mdpConfirm');
+console.log(formulaire, txtMDP, txtMDPCConfirm );
 
 //Ecouter l'envoi du formulaire
 formulaire.addEventListener('submit', (e) => {
