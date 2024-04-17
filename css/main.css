@@ -30,3 +30,74 @@ button {
     background-color: #e74c3c;
     color: #ecf0f1;
 }
+
+button:hover  {
+    background-color: #e74c3c;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: all 0.3s ease;
+}
+
+button[type="reset"] {
+    background-color: #8D99AE;
+    color: #2c3e50;
+}
+
+/* *******************************
+        Formulaires HTML
+**********************************/
+form {
+    padding: 20px;
+    margin:  2em auto 80px;
+    background-color: rgba(255,255,255, .8); /* Fond blanc avec transparence de 20% */
+    border: 6px solid #2c3e50;
+    max-width: 450px;
+    min-width: 300px;
+}
+
+form ul.form {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form ul.form li {
+    margin-bottom: 1.5em;
+}
+
+form label {
+    display: block;
+    margin-bottom: .5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form label input {
+    display: inline;
+    width: auto;
+}
+
+form fieldset {
+    padding: 1em;
+    border: 2px solid #2c3e50;
+}
+
+form fieldset legend {
+    font-weight: bold;
+    padding: 0 .5em;
+}
+
+form fieldset label {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 1em;
+    border: 2px solid #2c3e50;
+    background-color: white;
+    font-family: inherit; /* Force l'héritage de la police de texte */
+    font-size: inherit; /* Force l'héritage de la taille de texte */
+    color: inherit; /* Force l'héritage de la couleur de texte */
+}
