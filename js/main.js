@@ -12,16 +12,22 @@ const txtMDPCConfirm  = document.getElementById('mdpConfirm');
 console.log(formulaire, txtMDP, txtMDPCConfirm );
 
 //Ecouter l'envoi du formulaire
-formulaire.addEventListener('submit', (e) => {
+formulaire.addEventListener('submit', (event) =>  {
+    // Stoppe l'envoie du formulaire
+    event.preventDefault();
+
     // Récupérer la valeur du mot de passe
     let mdp = txtMDP.value;
     let mdpConfirm  = txtMDPCConfirm.value;
 
     // Tester si les mdp sont identiques
     if(mdpConfirm !== mdp) {
-        alert('Les mots de passes sont différents !!!')
-    }
+        alert('Les mots de passes sont différents !!!');
 
-    alert('Compte créé avec succès !');
-})
+    } else {
+        alert('Compte créé avec succès !');
+        // Permet d'envoyer le formulaire
+        formulaire.submit();
+    }
+});
 
